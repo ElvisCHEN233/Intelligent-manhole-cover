@@ -22,9 +22,7 @@
 
 ## 总体设计
 
-![image][reference_name01]
-
-![image][reference_name02]
+见项目-resource文件夹
 
 ## 硬件分析与设计
 
