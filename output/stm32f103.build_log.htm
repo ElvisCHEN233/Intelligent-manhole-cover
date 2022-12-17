@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: chen yiwei, yuenew, LIC=JDA0P-MVBT6-5BIEB-2MH42-YYSSK-KIVBK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.25.2.0
+Toolchain Path:  E:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Evyn\Desktop\stm32\stm32f103.uvprojx
+Project File Date:  03/06/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\Keil5\ARM\ARMCC\Bin'
+Rebuild target 'STM32F103'
+compiling core_cm3.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_adc.c...
+compiling delay.c...
+compiling led.c...
+hardware\src\led.c(172): warning:  #1-D: last line of file ends without a newline
+  }
+hardware\src\led.c: 1 warning, 0 errors
+compiling timer.c...
+compiling hsr04.c...
+compiling sys.c...
+compiling gpio.c...
+hardware\src\gpio.c(8): warning:  #177-D: variable "gpio_initstruct"  was declared but never referenced
+  	GPIO_InitTypeDef gpio_initstruct;
+hardware\src\gpio.c: 1 warning, 0 errors
+compiling dht11.c...
+compiling adc.c...
+compiling MPU6050.c...
+compiling usart.c...
+compiling main.c...
+user\main.c(110): warning:  #177-D: variable "buf"  was declared but never referenced
+  	char buf[256];
+user\main.c: 1 warning, 0 errors
+compiling onenet_http.c...
+NET\nb-iot\src\onenet_http.c(88): warning:  #870-D: invalid multibyte character sequence
+  		UsartPrintf(USART_DEBUG, "查询开�?1状态正确\r\n");//串口提示数据
+NET\nb-iot\src\onenet_http.c(89): warning:  #870-D: invalid multibyte character sequence
+  		UsartPrintf(USART_DEBUG, "采集到的数值为�?%d \r\n",*(ptr-4));
+NET\nb-iot\src\onenet_http.c(102): warning:  #870-D: invalid multibyte character sequence
+  		UsartPrintf(USART_DEBUG, "查询开�?1状态失败\r\n");                                            //串口提示数据
+NET\nb-iot\src\onenet_http.c: 3 warnings, 0 errors
+compiling sim7020.c...
+NET\nb-iot\src\sim7020.c(106): warning:  #940-D: missing return statement at end of non-void function "SIM_PowerON" 
+  }
+NET\nb-iot\src\sim7020.c(263): warning:  #870-D: invalid multibyte character sequence
+  		UsartPrintf(USART_DEBUG, "APN�?%s\r\n",apn);              //串口输出信息
+NET\nb-iot\src\sim7020.c(371): warning:  #870-D: invalid multibyte character sequence
+  	UsartPrintf(USART_DEBUG, "准备检查SIM卡状�?... ...\r\n");                //串口输出信息
+NET\nb-iot\src\sim7020.c(380): warning:  #870-D: invalid multibyte character sequence
+  		UsartPrintf(USART_DEBUG, "准备检查信号质�?... ...\r\n");             //串口输出信息
+NET\nb-iot\src\sim7020.c(384): warning:  #870-D: invalid multibyte character sequence
+  			UsartPrintf(USART_DEBUG, "信号强度�?%d\r\n",csq);                //串口输出信息
+NET\nb-iot\src\sim7020.c(400): warning:  #870-D: invalid multibyte character sequence
+  	UsartPrintf(USART_DEBUG, "准备查询PDN 激�?... ...\r\n");                 //串口输出信息
+NET\nb-iot\src\sim7020.c(428): warning:  #870-D: invalid multibyte character sequence
+  	UsartPrintf(USART_DEBUG, "准备连接服务�?... ...\r\n");                 //串口输出信息
+NET\nb-iot\src\sim7020.c(554): warning:  #870-D: invalid multibyte character sequence
+  	UsartPrintf(USART_DEBUG, "数据发送成�? \r\n");
+NET\nb-iot\src\sim7020.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=29728 RO-data=888 RW-data=96 ZI-data=4320  
+FromELF: creating hex file...
+".\output\stm32f103.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F103
+  E:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:18
+</pre>
+</body>
+</html>
